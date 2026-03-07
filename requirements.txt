@@ -1,0 +1,12 @@
+# WhisperType - ditado por voz com Whisper local
+#
+# Se você tem GPU NVIDIA e quer usar CUDA (evitar o aviso FP16/CPU):
+#   1. Instale o PyTorch com suporte à sua versão de CUDA primeiro:
+#      pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+#      (Troque cu126 por cu118 etc. conforme https://pytorch.org/get-started/locally/)
+#   2. Depois instale o resto: pip install -r requirements.txt
+#
+openai-whisper
+pyperclip
+keyboard
+pyautogui
