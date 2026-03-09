@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "whispertype"
+version = "1.0.0"
+description = "Ditado por voz local com Whisper — push-to-talk para qualquer campo de texto"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+[project.scripts]
+whispertype = "whispertype.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["whispertype*"]
